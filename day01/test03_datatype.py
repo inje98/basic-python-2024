@@ -4,7 +4,7 @@
 ## 기본자료형 - 숫자형, 문자형, 불형, None형...
 ## 복함자료형 - 리스트형, 튜플형, 딕셔너리, 집합...
 
-## None형 == null(, C, C++, C#, Java, SQL)
+## None형 == null(C, C++, C#, Java, SQL)
 ## 값은 값인데 아무것도 지정할 수 없는 값 => None
 
 apple = None
