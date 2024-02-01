@@ -103,4 +103,7 @@
     - 주피터 노트북
         - Ctrl + Shift + P (명령팔레트)로 시작
         - 사용방법 (test31.jupyternb.ipynb 참조)
+    - folium 기본사용
+    
+    
     - 가상환경
