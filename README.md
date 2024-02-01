@@ -92,6 +92,13 @@
             return 0
     ```
     - 텍스트 파일 입출력
-    - 파이썬 활용
+    ```python
+    f = open('파일명', mode = 'r|w|a', encoding = 'cp949 | utf-8')
+    f.read()
+    f.readline()
+    f.write()
+    f.close()
+    ```
+- 파이썬 활용
     - 주피터 노트북
     - 가상환경
