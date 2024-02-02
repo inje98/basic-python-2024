@@ -33,7 +33,6 @@ class Person: # 사람 클래스 선언
 ij = Person()  # 함수호출처럼 작성하면 됨
 es = Person()
 
-
 # print(type(ij))
 # print(type(1))
 
