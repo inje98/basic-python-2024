@@ -125,6 +125,7 @@
     - QtDesigner 사용법
     - 쓰레드 학습
         - GIL, 병렬프로세싱 더 학습할 것
+    
     ![쓰레드 예제](https://raw.githubusercontent.com/inje98/basic-python-2024/main/images/python003.gif)
 
 ```python
