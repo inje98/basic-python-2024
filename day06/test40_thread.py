@@ -19,7 +19,7 @@ class BackWorker(QThread): # PyQt에서 스레드 클래스 상속
 
     def run(self) -> None:  # 스레드 실행  # QThread에선 UI관련된 처리를 할 수 없음
         # 스레드로 동작할 내용
-        maxVal = 101
+        maxVal = 1000001
         self.initSignal.emit(maxVal)
         ### self.parent.pgbTask.setValue(0)
         ### self.parent.pgbTask.setRange(1, maxVal)

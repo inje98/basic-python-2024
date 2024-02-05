@@ -150,7 +150,6 @@
             # ...    
 
      # 스레드에서 시그널이 넘어오면 UI처리를 대신 해주는 부분 슬롯함수
-     # 스레드에서 시그널이 넘어오면 UI처리를 대신 해주는 부분 슬롯함수
        @pyqtSlot(int) # self.initSignal.emit() 동작해서 실행
         def initPgbTask(self, maxVal):
             self.pgbTask.setValue(0)
