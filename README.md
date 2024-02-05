@@ -109,9 +109,25 @@
     - json 입출력
     - 응용예제 연습(10개)
         - IP주소 확인
+        - QR코드 만들기
 
 
-        
+## 6일차
+- Python 라이브러리 경로 : C:\DEV\Langs\Python311\Lib\site-packages
+- 파이썬 응용
+   - Window App(PyQt) 만들기
+   ```shell
+   > pip install PyQt5
+   > pip install PyQt5Designer
+   
+   ```
+    - PyQt5 기본실행
+- 가상환경 
+
+
+
+
+
 
     - 가상환경
     - 객체지향
