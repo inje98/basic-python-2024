@@ -37,7 +37,10 @@ class WinApp(QWidget):
         self.btn_blue.clicked.connect(self.buttonClicked)
         self.btn_clear.clicked.connect(self.buttonClicked)
 
+        
         self.btn_load.clicked.connect(self.btnLoadClicked)
+        self.btn_save.clicked.connect(self.btnSaveClicked)
+
 
     def btnLoadClicked(self):
         image = QFileDialog.getOpenFileName(None, '이미지로드', '', 'Image file(*.jpg;*.png)')
@@ -48,6 +51,12 @@ class WinApp(QWidget):
         self.lb_canvas.adjustSize() # 이미지를 라벨 사이즈로 조정
 
     
+    def btnSaveClicked(self):
+        filePath, _ = QFileDialog.getSaveFileName(None, '이미지로드', '', 'Image file(*.jpg;*.png)')
+        # print(filePath)
+        if filePath == '': return
+        pixmap = self.lb_canvas.pixmap()
+        pixmap.save(filePath)
     
     # 반복되는 부분이 있어서 함수 하나로
     def buttonClicked(self): # black red, blue 를 다 통일한 함수
