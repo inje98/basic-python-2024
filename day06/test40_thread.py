@@ -47,6 +47,9 @@ class qtwin_exam(QWidget):  # QWidget을 [상속] 받을거야. QWidget이 가�
         th.setSignal.connect(self.setPgbTask)
         th.setLog.connect(self.setTxblog) # TextBrowser 위젯에 진행사항 출력
 
+    # 부모의 CloseEvent는 그냥 닫히기 때문에 재정의
+    # QWidget에 있는 CloseEvent를 그래도 쓰면 그냥 닫힘
+    # 닫을지 말지를 한번더 물어보는 형태로 다시 구현하고 싶음(재정의 : Override)
     def closeEvent(self, QCloseEvent) -> None: # x버튼 종료확인
         re = QMessageBox.question(self, '종료확인', '종료할래?', QMessageBox.Yes|QMessageBox.No)
         if re == QMessageBox.Yes:
