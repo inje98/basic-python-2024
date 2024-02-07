@@ -167,7 +167,7 @@
         - 이미지 뷰어
         - 이미지 에디터
 
- ![쓰레드 예제](https://raw.githubusercontent.com/inje98/basic-python-2024/main/images/eve.png)
+ ![쓰레드 예제](https://raw.githubusercontent.com/inje98/basic-python-2024/main/images/eve.jpg)
 
  ## 8일차
 - 파이썬 응용
