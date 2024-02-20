@@ -15,8 +15,12 @@ class WinApp(QWidget):
         self.initSignal()
 
     def initUI(self): # 화면 초기화
-        uic.loadUi('./day07/pyPaint.ui', self)
-        self.setWindowIcon(QIcon('./images/iot.png'))
+        # uic.loadUi('./day07/pyPaint.ui', self)  # 실행파일 생성시는 경로에 상대경로가 엇어져야 함
+        uic.loadUi('C:/sources/basic-python-2024/day07/pyPaint.ui', self)     # pyinstaller --onefile .\test42_pypaint.py 터미널에 이거 쳐서 실행파일 생성 # dist파일에 있음
+                                                                              # pyinstaller -w -F .\test42_pypaint.py 이게 더 나은 방법인듯
+        # self.setWindowIcon(QIcon('./images/iot.png'))
+        self.setWindowIcon(QIcon('C:/sources/basic-python-2024/day07/iot.png'))
+
         self.setWindowTitle('Py그림판')
         # 캔버스 초기화
         self.brushColor = Qt.black
